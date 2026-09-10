@@ -2,9 +2,13 @@
 
 Aplicação interna para pesquisar e registrar equivalentes de produtos.
 
-## Persistência
+## Persistência compartilhada
 
-O navegador mantém os dados localmente para uso offline, mas a sincronização entre computadores/celulares exige um banco de dados compartilhado e autenticação. O catálogo importado pelo CSV não deve depender somente do `localStorage`.
+O catálogo e as pesquisas são salvos em um banco Supabase compartilhado. A importação do CSV é feita uma única vez: depois de importado pelo site, o catálogo fica na nuvem e não depende mais do arquivo que estava no computador.
+
+Alterações de nome encontrado, plataforma, preço, link, status, confiança, observações e opções também são gravadas no banco. Ao abrir o site em outro computador ou celular, os mesmos dados são carregados.
+
+O `localStorage` não é usado como banco principal.
 
 ## Escopo
 
@@ -15,5 +19,6 @@ O navegador mantém os dados localmente para uso offline, mas a sincronização 
 - links de pesquisa
 - simulador de preço
 - exportação e backup
+- persistência compartilhada entre dispositivos
 
 Não há conversor de planilhas entre marketplaces.
