@@ -1,1 +1,1 @@
-export const products = [{"id":1,"name":"ABRIDOR DE GARRAFA INOX - TT BRASIL","cost":4.7,"available":"Disponível","image":"https://uxszfnofezfkiyfrbfwo.supabase.co/storage/v1/render/image/public/produtos/abridor-de-garrafa-inox-tt-brasil.jpg"},{"id":2,"name":"ABRIDOR DE LATAS INOX","cost":3.5,"available":"Disponível","image":"https://uxszfnofezfkiyfrbfwo.supabase.co/storage/v1/render/image/public/produtos/abridor-de-latas-inox.jpg"}];
+export const products = [{"id":1,"name":"ABRIDOR DE GARRAFA INOX - TT BRASIL","cost":4.7,"available":"Disponível","image":""}];
